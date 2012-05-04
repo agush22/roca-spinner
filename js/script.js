@@ -75,4 +75,9 @@ $(document).ready(function() {
   var paper = Raphael(document.getElementById('wheel'),400,350);
   var wheelayout = paper.vlogitWheel();
   var headerback = paper.circle(202, 175, 90).attr({fill: '#111', "stroke": "none"}).toFront();
+  $(document).keyup(function(e) {
+    if (e.keyCode == 27) {
+    //do something on esc
+    }
+  });
 });
